@@ -53,7 +53,7 @@
     "test": "jest",
     "test:ci": "jest --runInBand",
     "test:e2e:web": "pnpm build && playwright test --config=lana/test/playwright/playwright.config.web.ts",
-    "serve:web": "pnpm build && vscode-test-web --browser=chromium --browserOption=--disable-web-security --open-devtools --quality=stable --extensionDevelopmentPath=lana --extensionId=salesforce.salesforcedx-vscode-services sample-app/debug-logs",
+    "serve:web": "pnpm build && vscode-test-web --browser=chromium --browserOption=--disable-web-security --quality=stable --extensionDevelopmentPath=lana --extensionId=salesforce.salesforcedx-vscode-services sample-app/debug-logs",
     "ci:install": "pnpm install --frozen-lockfile --prefer-offline --ignore-scripts",
     "prettier-format": "prettier '**/*.ts' --cache --write --experimental-cli"
   },
