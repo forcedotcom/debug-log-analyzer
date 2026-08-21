@@ -23,7 +23,7 @@ export default defineConfig([
     input: './lana/src/Main.ts',
     output: {
       format: 'esm',
-      dir: './lana/out',
+      dir: './lana/dist',
       cleanDir: true,
       chunkFileNames: 'lana-[name].js',
       sourcemap: false,
@@ -39,7 +39,7 @@ export default defineConfig([
     input: { Main: './lana/src/Main.web.ts' },
     output: {
       format: 'cjs',
-      dir: './lana/out/web',
+      dir: './lana/dist/web',
       entryFileNames: 'Main.web.js',
       chunkFileNames: 'lana-[name].js',
       sourcemap: false,
@@ -78,11 +78,11 @@ export default defineConfig([
         targets: [
           {
             src: ['log-viewer/out/*', 'log-viewer/index.html', 'lana/certinia-icon-color.png'],
-            dest: 'lana/out',
+            dest: 'lana/dist',
           },
           {
             src: path.join(codiconsDist, 'codicon.{css,ttf}'),
-            dest: 'lana/out',
+            dest: 'lana/dist',
           },
         ],
       }),
