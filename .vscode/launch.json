@@ -10,7 +10,7 @@
       "type": "extensionHost",
       "request": "launch",
       "args": ["--extensionDevelopmentPath=${workspaceFolder}/lana"],
-      "outFiles": ["${workspaceFolder}/lana/out/**/*.js"],
+      "outFiles": ["${workspaceFolder}/lana/dist/**/*.js"],
       "localRoot": "${workspaceFolder}/lana"
     },
     {
@@ -23,7 +23,7 @@
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}/${input:worktree}/lana"
       ],
-      "outFiles": ["${workspaceFolder}/${input:worktree}/lana/out/**/*.js"],
+      "outFiles": ["${workspaceFolder}/${input:worktree}/lana/dist/**/*.js"],
       "localRoot": "${workspaceFolder}/${input:worktree}/lana"
     },
     {

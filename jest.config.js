@@ -20,6 +20,7 @@ const defaultConfig = {
   },
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
+    '<rootDir>/dist/',
     '<rootDir>/out/',
     '<rootDir>/test/playwright/',
   ],
