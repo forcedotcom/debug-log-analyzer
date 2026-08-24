@@ -10,6 +10,7 @@
 
 *.vsix
 
+dist/
 out/
 node_modules/*
 
